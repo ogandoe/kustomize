@@ -11,3 +11,4 @@ bases:
 
 patchesStrategicMerge:
   - agregar-replicas.yaml
+  - labels-produccion.yaml
