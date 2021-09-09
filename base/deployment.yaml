@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginxdemo-deployment
+  name: nginx-demo-kustomize
 spec:
   selector:
     matchLabels:
-      app: nginxdemo
+      app: nginx-demo-kustomize
   replicas: 1
   template:
     metadata:
       labels:
-        app: nginxdemo
+        app: nginx-demo-kustomize
     spec:
       containers:
-        - name: nginxdemo
+        - name: nginx-demo-kustomize
           image: nginx:stable-alpine
           resources:
             limits:
